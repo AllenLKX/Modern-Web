@@ -1,0 +1,42 @@
+body{background-image: url(images/silverware.jpg); background-repeat: repeat;}
+h1{
+	font-family: Century Gothic, Futura, Verdana;
+    font-size: 60px;
+	text-align: center;
+	color: #A4A400;
+}
+.show img{
+	width: 400px;
+	height: 400px;
+	clear: both;
+	display: block;
+	margin:auto;
+	border-collapse: collapse;
+}
+a{
+	font-family:  Century Gothic, Futura, Verdana;
+	font-size: 50px;
+	text-align: center;
+	color:  #A4A400;
+}
+.enter{
+	text-align: center;
+}
+.share {
+    clear: both;
+	display: block;
+	margin:auto;
+	border-collapse: collapse;
+	height: 50px;
+	width: 256px;
+}
+.share img{
+	clear: both;
+	display: inline;
+	margin:auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+.share a{
+	float: left;
+}
