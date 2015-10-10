@@ -1,4 +1,8 @@
-body{background-image: url(images/silverware.jpg); background-repeat: repeat;}
+body{
+	background-image: url(images/silverware.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
 h1{
 	font-family: Century Gothic, Futura, Verdana;
     font-size: 60px;

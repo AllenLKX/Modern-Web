@@ -13,6 +13,7 @@ body{
 	background-image: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
     background-repeat: repeat;
     margin-left: 25px;
+    background-attachment: fixed;
     }
 h1{
 	font-size:22pt;
