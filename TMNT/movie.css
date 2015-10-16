@@ -43,7 +43,7 @@ body{
 }
 #top .rate{
 	display: table-cell;
-	font-size: 48px;
+	font-size: 48pt;
 	color: red;
 	font-weight: bold;
 }
