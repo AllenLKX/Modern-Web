@@ -23,7 +23,7 @@ body{
 }
 #content{
     width: 800px;
-    height: 852px;
+    height: 830px;
     border:4px gray solid;
     margin: auto;
 }
@@ -60,15 +60,16 @@ dd{
 #comment_board{
 	width: 550px;
 	float: left;
+	margin-top: 8px;
 }
 .comment{
-	margin-top: 5px;
+	margin-bottom: 3em;
 }
 .comment_text{
 	font-weight: bold;
 	background-color: #E1D697;
 	border:2px gray;
-	padding: 8px;
+	padding-left: 8px;
 	border-style:solid;
 }
 .comment_text img{
@@ -97,6 +98,7 @@ dd{
 }
 #general_overview{
 	width: 250px;
+	height: 809px;
 	float: right;
 	background-color:#A2B964;
 	font-family: Arial, sans-serif;
@@ -111,8 +113,15 @@ dd{
 	float: right;
 	margin:0;
 	background-color: #A2B964;
-	margin-top: -1px;
+	margin-bottom: 0px;
 	padding: 5px;
+	/*clear: left;*/
+}
+#pages p{
+	padding: 0;
+	/*margin: 0;*/
+	margin-top: -2px;
+	margin-bottom: 0;
 }
 #check{
 	position: fixed;
