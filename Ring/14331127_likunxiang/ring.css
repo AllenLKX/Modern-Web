@@ -19,8 +19,8 @@ body, ul, div, span, img, p{
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
-	top: 100px;
-	left: 120px;
+	top: 110px;
+	left: 140px;
 	-webkit-transition: all 0.3s;
 }
 /*消去无作用的小圆点并设置内在格式*/
