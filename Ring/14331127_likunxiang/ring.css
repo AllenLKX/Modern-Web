@@ -1,0 +1,203 @@
+/*先将预设格式准备好*/
+body, ul, div, span, img, p{
+	padding: 0;
+	margin: 0;
+	border:0;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#at-plus-container {
+	position: absolute;
+	bottom: 30%;
+	left: 40%;
+}
+.info{
+	width: 0px;
+	height: 0px;
+	border-radius: 50%;
+	background-color: #9B9494;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 100px;
+	left: 120px;
+	-webkit-transition: all 0.3s;
+}
+/*消去无作用的小圆点并设置内在格式*/
+li {
+	list-style-type: none;
+	display:inline-block;
+	vertical-align: center;
+	-webkit-transition: all 0.3s;
+}
+img {
+	margin-right: 3px;
+}
+.page {
+	margin-top:15px;
+	padding-left: 55px;
+	color:white;
+}
+.mine {
+	margin-top:12px;
+	color: #079E6E;
+	width: 45px;
+	margin-left: 20px;
+	display: inline-block;
+}
+div #control-ring-container {
+	position: absolute;
+	top: 120px;
+}
+#control-ring li {
+	height: 0px;
+	width: 0px;
+	border-radius: 50%;
+	background-color: #7E7A7A;
+	text-align: center;
+	line-height: 33px;
+	margin: 0;
+	opacity: 0;
+}
+/*对每一个按钮依次定位。注意：此处position应为absolute， 否则在后期会出现很多问题难以解决*/
+.mask.button {
+	background-image: url(assets/images/mask.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 160px;
+	-webkit-transition: all 0.3s ease;
+}
+.history.button {
+	background-image: url(assets/images/history.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 160px;
+	-webkit-transition: all 0.3s ease;
+}
+.message.button {
+	background-image: url(assets/images/message.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 160px;
+	-webkit-transition: all 0.3s ease;
+}
+.unread {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: red;
+	border-radius: 50%;
+	line-height: 15px;
+	font-size: 11px;
+	text-align: center;
+	position: relative;
+	bottom: 5px;
+	left: 15px;
+	color: white;
+}
+.setting.button {
+	background-image: url(assets/images/setting.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 160px;
+	-webkit-transition: all 0.3s ease;
+}
+.sign.button {
+	background-image: url(assets/images/signin.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 160px;
+	-webkit-transition: all 0.3s ease;
+}
+.apb {
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	background-color: #9B9494;
+	background-image: url(assets/images/atplus_white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	line-height: 33px;
+	margin: 0;
+	position: absolute;
+	left: 125px;
+	bottom: 125px;  /*先通过计算将apb定位，防止接下来#button变化时apb移位*/
+	-webkit-transition: all 0.3s ease;
+}
+#button {
+	position: absolute;
+	left: 45%;
+	width: 0px;  /*不影响hover触发*/
+	height: 250px;  /*高度与hover后一致，防止各元素移位*/
+}
+#button:hover {
+	width: 250px;
+	height: 250px;  /*hover后#button改变大小，从而使得鼠标能够在一定的点击范围内移动而菜单不会恢复*/
+}
+/*对hover后的元素依次改变形式并定位，依然要求absolute*/
+#button:hover .apb{
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	background-image: url(assets/images/atplus_green.png);
+	background-size: 80%;
+	position: absolute;
+	left: 125px;
+	bottom: 125px;
+	background-color: rgba(48, 63, 159, 1);
+}
+
+#button:hover .info{
+	position: absolute;
+	opacity: 1;
+	width: 145px;
+	height: 145px;
+	left: 80px;
+	top: -80px;
+}
+#button:hover .mask.button{
+    width: 33px;
+    height: 33px;
+    opacity: 1;
+    margin-left: -85px;
+    top:-70px;
+}
+#button:hover .message.button {
+    width: 33px;
+    height: 33px;
+    opacity: 1;
+    margin-left: -63px;
+    top: 10px;
+}
+#button:hover .history.button {
+    width: 33px;
+    height: 33px;
+    opacity: 1;
+    margin-left: -85px;
+    top: -30px;
+}
+#button:hover .setting.button {
+    width: 33px;
+    height: 33px;
+    opacity: 1;
+    margin-left: -20px;
+    top: 20px;
+}
+#button:hover .sign.button {
+    width: 33px;
+    height: 33px;
+    opacity: 1;
+    margin-left: 20px;
+    top: 15px;
+}

@@ -1,0 +1,94 @@
+body{
+	font-family:trebuchet ms, arial, sans-serif;
+	/*background: #252A2F;*/
+	background: url(http://img.lanrentuku.com/img/allimg/1305/5-13050GS109.gif);
+	padding-top: 0;
+	margin-top: 0;
+	margin-left: 3%;
+	margin-right: 3%;
+	color: #ffffff;
+}
+.head{
+	background: #2f2f2f;
+	padding-top: 0;
+}
+
+.left{
+	float: left;
+	background: #2f2f2f;
+	width: 20%;
+}
+.center{
+	float: left;
+	background: #2f2f2f;
+	width: 50%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.right{
+	float: right;
+	background: #2f2f2f;
+	width: 20%;
+	text-align: center;
+}
+.main_head{
+	color: #ffffff;
+	text-decoration: underline;
+	text-align: center;
+}
+.head_p{
+	color: #ffffff;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+	text-align: center;
+	color: #8b4513;
+	font-size: 16pt;
+	line-height: 56px;
+	padding-left: 0;
+	text-decoration: underline;
+
+}
+
+.produce {
+	float: left;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.produce_left{
+	float: left;
+	background: #2f2f2f;
+}
+.produce_right{
+	float: left;
+	background: #2f2f2f;
+	text-align: center;
+}
+h2{
+	color: #8b4513;
+	text-decoration: underline;
+	text-align: center;
+}
+p{
+	font-style:  italic;
+	font-size: 12pt;
+}
+.intro{
+	font-style:  italic;
+	font-size: 12pt;
+	margin: 6px;
+}
+p#sign{
+	margin: 16px;
+	text-align: center;
+	color: #808080;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 30px;
+	text-align: center;
+}

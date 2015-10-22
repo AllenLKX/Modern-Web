@@ -1,0 +1,100 @@
+body, ul, div, span, img, p{
+	padding: 0;
+	margin: 0;
+	border:0;
+	overflow: hidden;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+#at-plus-container {
+	position: absolute;
+	bottom: 30%;
+	left: 40%;
+}
+.info{
+	width: 145px;
+	height: 145px;
+	border-radius: 50%;
+	background-color: #9B9494;
+}
+li {
+	list-style-type: none;
+	display:inline-block;
+	vertical-align: center;
+}
+li img {
+	margin-right: 5px;
+}
+.page {
+	margin-top:15px;
+	padding-left: 50px;
+	color:white;
+}
+.mine {
+	margin-top:12px;
+	color: #079E6E;
+	width: 45px;
+	margin-left: 17px;
+	display: inline-block;
+}
+#control-ring li {
+	height: 33px;
+	width: 33px;
+	border-radius: 50%;
+	background-color: #9B9494;
+	text-align: center;
+	line-height: 33px;
+	margin: 0;
+}
+.mask.button {
+	background-image: url(assets/images/mask.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.history.button {
+	background-image: url(assets/images/history.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.message.button {
+	background-image: url(assets/images/message.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.unread {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: red;
+	border-radius: 50%;
+	line-height: 15px;
+	font-size: 11px;
+	text-align: center;
+	position: relative;
+	bottom: 5px;
+	left: 18px;
+	color: white;
+}
+.setting.button {
+	background-image: url(assets/images/setting.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.sign.button {
+	background-image: url(assets/images/signin.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.apb {
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	background-color: #9B9494;
+	background-image: url(assets/images/atplus_white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	line-height: 33px;
+	margin: 0;
+}
