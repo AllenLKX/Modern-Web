@@ -16,7 +16,7 @@ body, ul, div, span, img, p{
 	width: 0px;
 	height: 0px;
 	border-radius: 50%;
-	background-color: #9B9494;
+	background-color: #7E7E7E;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
@@ -24,6 +24,10 @@ body, ul, div, span, img, p{
 	left: 140px;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
+}
+.info span {
+	position: relative;
+	bottom: 5px;
 }
 /*消去无作用的小圆点并设置内在格式*/
 li {
@@ -34,19 +38,24 @@ li {
 	-webkit-transition: all 0.3s ease-in-out;
 }
 img {
-	margin-right: 3px;
+	margin-right: 9px;
 }
 .page {
-	margin-top:15px;
-	padding-left: 55px;
+	margin-top:11px;
+	padding-left: 47px;
 	color:white;
 }
 .mine {
 	margin-top:12px;
 	color: #079E6E;
 	width: 45px;
-	margin-left: 20px;
 	display: inline-block;
+}
+.posted {
+	margin-left: 23px;
+}
+.like {
+	margin-right: 5px;
 }
 div #control-ring-container {
 	position: absolute;
@@ -55,77 +64,51 @@ div #control-ring-container {
 #control-ring li {
 	height: 0px;
 	width: 0px;
-	border-radius: 50%;
-	background-color: #7E7A7A;
+	border-radius: 60%;
+	background-color: #6B6B6B;
 	text-align: center;
 	line-height: 33px;
 	margin: 0;
 	opacity: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+	position: absolute;
+}
+.button {
+	top: 0px;
+	left: 160px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
 }
 /*对每一个按钮依次定位。注意：此处position应为absolute， 否则在后期会出现很多问题难以解决*/
 .mask.button {
-	background-image: url(assets/images/mask.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 160px;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
+	background-image: url(assets/images/nomask.png);
 }
 .history.button {
 	background-image: url(assets/images/history.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 160px;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
 }
 .message.button {
 	background-image: url(assets/images/message.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 160px;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
 }
 .unread {
 	display: block;
-	width: 15px;
-	height: 15px;
-	background-color: red;
+	width: 18px;
+	height: 18px;
+	background-color: #F93630;
 	border-radius: 50%;
-	line-height: 15px;
-	font-size: 11px;
-	text-align: center;
+	line-height: 18px;
+	font-size: 13px;
 	position: relative;
 	bottom: 5px;
-	left: 15px;
+	left: 20px;
 	color: white;
 }
 .setting.button {
 	background-image: url(assets/images/setting.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 160px;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
 }
 .sign.button {
 	background-image: url(assets/images/signin.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 160px;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
 }
 .apb {
 	width: 33px;
@@ -133,6 +116,7 @@ div #control-ring-container {
 	border-radius: 50%;
 	background-color: #9B9494;
 	background-image: url(assets/images/atplus_white.png);
+	background-size: 80%;
 	background-repeat: no-repeat;
 	background-position: center;
 	text-align: center;
@@ -141,8 +125,8 @@ div #control-ring-container {
 	position: absolute;
 	left: 125px;
 	bottom: 125px;  /*先通过计算将apb定位，防止接下来#button变化时apb移位*/
-	transition: all 0.3s ease-in-out 0.1s;
-	-webkit-transition: all 0.3s ease-in-out 0.1s;
+	transition: all 0.5s ease-out 0.1s;
+	-webkit-transition: all 0.5s ease-out 0.1s;
 }
 #button {
 	position: absolute;
@@ -166,47 +150,38 @@ div #control-ring-container {
 	bottom: 125px;
 	background-color: rgba(48, 63, 159, 1);
 }
-
 #button:hover .info{
 	position: absolute;
 	opacity: 1;
-	width: 145px;
-	height: 145px;
+	width: 135px;
+	height: 135px;
 	left: 80px;
 	top: -80px;
+	cursor: pointer;
 }
-#button:hover .mask.button{
-    width: 33px;
+#button:hover .button {
+	width: 33px;
     height: 33px;
     opacity: 1;
+    cursor: pointer;
+}
+#button:hover .mask.button{
     margin-left: -85px;
     top:-70px;
 }
 #button:hover .message.button {
-    width: 33px;
-    height: 33px;
-    opacity: 1;
     margin-left: -63px;
     top: 10px;
 }
 #button:hover .history.button {
-    width: 33px;
-    height: 33px;
-    opacity: 1;
     margin-left: -85px;
     top: -30px;
 }
 #button:hover .setting.button {
-    width: 33px;
-    height: 33px;
-    opacity: 1;
     margin-left: -20px;
     top: 20px;
 }
 #button:hover .sign.button {
-    width: 33px;
-    height: 33px;
-    opacity: 1;
     margin-left: 20px;
     top: 15px;
 }
